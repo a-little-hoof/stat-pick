@@ -1,0 +1,13 @@
+_ > nanoagent.plugin.v0001.ProductConfig:
+tagline: "Decide which summary a question in words is really asking for"
+summary: "Each case asks something about a column of readings — a typical wait, the size that occurs most often, how far readings stray from their average — and the readings are never shown. The agent decides which of eight summaries the question wants, and a tool works the number out. The choice is the whole of the job."
+highlights:
+  - "The readings stay hidden, so the number cannot be guessed, only chosen correctly"
+  - "A question about a typical wait, with two extreme outliers, wants the median and not the mean"
+  - "The choice and the value are scored separately: the right summary with the wrong number is half an answer"
+  - "Runs offline: no network, no files, nothing to set up"
+steps:
+  - "Pick a case: delivery-delays, class-sizes, sensor-drift or rainfall"
+  - "The agent reads the question and the column it is about"
+  - "It decides which of the eight summaries the question is asking for"
+  - "A tool works that summary out, and the card shows whether the choice and the value were right"
